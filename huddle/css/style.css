@@ -1,0 +1,144 @@
+ :root{
+     --violet: hsl(257, 40%, 49%);
+     --softMagenta: hsl(300, 69%, 71%);
+ }
+ 
+ 
+ *{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+ }
+body{
+    background-image: url('/Images/bg-desktop.svg');
+    background-color:var(--violet) ;
+    width:80%;
+    height:100vh;
+    margin-left: 50px;
+}
+.header_img img{
+    height: 45px;
+    margin-top: 25px;
+}
+.container{
+    display:flex;
+    padding: 50px 5px 30px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.container img{
+    width: 45%;
+    height: 60vh;
+    margin: 10px;
+}
+.right_container{
+    padding-top: 50px;
+    padding-left: 30px;
+    width: 100%;
+    margin: 0 auto 70px auto;
+    
+}
+.right_container h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
+.right_container p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+}
+.paragraph{
+    padding-top: 10px;
+}
+.register{
+    background-color: white;
+    padding: 10px 15px;
+    margin-top: 15px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px black;
+}
+.register a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--violet);
+}
+   
+.register a:hover,.register:hover{
+    background-color:var(--softMagenta);
+    color: white;
+}
+.icon{
+    float:right;
+    display: flex;
+    align-items: flex-end;
+}
+.fa-brands{
+    color: #fff;
+    border-radius: 50% ;
+    display: inline-block;
+    border-radius: 60px white;
+    box-shadow: 0px 0px 2px #fff;
+    padding: 0.5em 0.6em;
+}
+
+
+@media only screen and (max-width: 600px){
+    body{
+    background-image: url('/Images/bg-moblie.svg');
+    background-image-repeat: norepeat;
+    width: 85%;
+    height:auto;
+    margin: auto;
+    }
+    .page{
+        height:100vh;
+    }
+    .container{
+        display: flex; 
+        flex-direction: column;
+        align-content: center;
+        padding:0;
+    }
+    .container img{
+        height: 45vh;
+        width: auto;
+    }
+  .right_container{
+       text-align: center;
+       padding-left: 5px;
+       padding-top: 15px;
+    }
+    . right_container p{
+        line-height:30px;
+    }
+    .register a{
+        align-content: center;
+    }
+    .register{
+        justify-content: center;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+    .icon{
+        align-content: center;
+        margin: 20px auto auto 60px;
+    }
+    .fa-brands{
+        align-items: center;
+        float: none;
+        margin-right: 10px;
+        width:50px;
+        height:10vh;
+        margin-top:-55px;
+        
+        
+    }
+}
