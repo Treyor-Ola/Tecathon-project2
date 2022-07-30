@@ -10,15 +10,17 @@
      box-sizing:border-box;
  }
 body{
-    background-image: url('/Images/bg-desktop.svg');
-    background-color:var(--violet) ;
-    background-repeat:no-repeat;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-color:var(--violet);
     width:80%;
     height:100vh;
     margin-left: 50px;
+}
+.bg{
+    height: 100%;
+    background-image: url('/Images/bg-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .header_img img{
     height: 45px;
@@ -144,6 +146,6 @@ body{
         height:10vh;
         margin-top:-55px;
         padding-top:5px;
-        font-size: 35px;
+        font-size: 30px;
     }
 }
