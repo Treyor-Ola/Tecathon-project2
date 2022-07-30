@@ -15,12 +15,12 @@ body{
     height:100vh;
     margin-left: 50px;
 }
-.bg{
+/*.bg{
     height: 100%;
     background-image: url('/Images/bg-desktop.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 .header_img img{
     height: 45px;
